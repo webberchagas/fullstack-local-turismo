@@ -1,0 +1,164 @@
+:root {
+  font-size: 62.5%;
+
+  --bg-default: #F5F4F0;
+  --border-primary: #D9D9D9;
+
+  --tx-primary: #1B1B1B;
+  --tx-secondary: #333333;
+  --tx-tertiary: #696969;
+  --tx-headline: #E1624F;
+
+  --accent-blue: #0C51A7;
+  --accent-orange: #E95E10;
+  --accent-pink: #E5245E;
+  --accent-purple: #591B98;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--bg-default);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2.8rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h1 , h2, h3 {
+  font-weight: bold;
+  color: var(--tx-primary);
+}
+
+ul {
+  padding-left: 2.4rem;
+}
+
+#page {
+  padding: 8.8rem 8rem 0;
+}
+
+.headline {
+  color: var(--tx-headline);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+#hero img {
+  height: 66rem;
+}
+
+#hero figcaption {
+  color: var(--tx-secondary);
+  text-align: center;
+  font-style: italic;
+
+  border-bottom: 1px solid var(--border-primary);
+
+  padding-block: 2.4rem 4.4rem;
+}
+
+#header_description {
+  margin-block: 6.4rem;
+}
+
+#header_description p {
+  color: var(--tx-secondary);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  border-bottom: 1px solid var(--border-primary);
+
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+}
+
+section figure img {
+  height: 35rem;
+}
+
+section figure h3 {
+  margin-block: 2rem 0.4rem;
+}
+
+section figcaption {
+  padding-bottom: 3rem;
+}
+
+strong {
+  color: var(--tx-secondary);
+  font-weight: bold;
+}
+
+ul li::marker {
+  color: var(--tx-secondary);
+}
+
+ul li[data-content="story"] {
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+
+ul li[data-content="couples"] {
+  color: var(--accent-purple);
+  font-weight: bold;
+}
+
+ul li[data-content="family"] {
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+
+ul li[data-content="budget"] {
+  color: var(--accent-orange);
+  font-weight: bold;
+}
+
+#description_region {
+  text-align: center;
+  color: var(--tx-secondary);
+  
+}
+
+footer img {
+  height: 1.6rem;
+  width: 1.6rem;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  margin-block: 6.5rem 4.8rem;
+}
